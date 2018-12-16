@@ -33,3 +33,20 @@ ALTER TABLE Pokedex
 ADD CONSTRAINT fk_id_poke
 FOREIGN KEY (idPokemon) 
 REFERENCES Pokemon(idPokemon) ON DELETE CASCADE ON UPDATE CASCADE; 
+
+
+
+INSERT INTO Usuario VALUES (1,"Hector","kaab");
+INSERT INTO Usuario VALUES (2,"Juan","kaab");
+INSERT INTO Usuario VALUES (3,"Luis","kaab");
+
+
+INSERT INTO Pokemon VALUES (1,"Bulbasor","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (2,"Ivysaur","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (3,"Venusaur","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (4,"Charmander","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (5,"Charmeleon","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (6,"Charizard","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (7,"Squirtle","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (8,"Wartortle","PLACEHOLDER");
+INSERT INTO Pokemon VALUES (9,"Blastoise","PLACEHOLDER");
