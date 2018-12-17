@@ -14,7 +14,7 @@
 
 #define RCVBUFSIZEC 8000
 #define sqluser "root" //Usuario de MYSQL
-#define sqlpass "123"  //Password MYSQL
+#define sqlpass "NULL"  //Password MYSQL
 
 void ErrorSalida(char *errorMessage);
 

@@ -4,19 +4,6 @@
 
 #define SERV_PORT 9999            /* El servidor correra en el puerto 9999 */
 
-void *ThreadMain(void *threadArgs) {
-    int clntSock;
-
-    /* Garantizas que los recursos de los thread se desasignen a la devolución */
-    pthread_detach(pthread_self());
-    clntSock = ((struct ThreadArgs *) threadArgs)->clntSock;
-    free(threadArgs);  
-
-    HandleTCPClient(clntSock);
-
-    return (NULL);
-}
-
 void *ThreadMain(void *arg); 
 
 /* Thread Cliente */
@@ -47,5 +34,18 @@ int main(int argc, char *argv[]) {
             ErrorSalida("pthread_create() failed");
 
     }
+}
+
+void *ThreadMain(void *threadArgs) {
+    int clntSock;
+
+    /* Garantizas que los recursos de los thread se desasignen a la devolución */
+    pthread_detach(pthread_self());
+    clntSock = ((struct ThreadArgs *) threadArgs)->clntSock;
+    free(threadArgs);  
+
+    HandleTCPClient(clntSock);
+
+    return (NULL);
 }
 
