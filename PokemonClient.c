@@ -10,11 +10,11 @@
 #include "ErrorSalida.h"
 #include "MessageDefinition.h"
 
-#define SERV_PORT 9999            /* El servidor correra en este servidor */
+#define SERV_PORT 9999            /* El servidor correra en este puerto */
 
 #define RCVBUFSIZEC 8000
-#define sqluser "root"
-#define sqlpass "Hector_2509"
+#define sqluser "root" //Usuario de MYSQL
+#define sqlpass "123"  //Password MYSQL
 
 void ErrorSalida(char *errorMessage);
 
