@@ -20,6 +20,9 @@ sudo apt-get install libmysqlclient-dev
 En fedora:
 sudo yum install mysql-devel
 
+Para que la aplicacion funcione de manera adecuada, asegurese de tener instalado
+mysql-server y mysql-client
+
 Para instalar la base de datos:
 mysql -u root -p <PokemonBase.sql  
 
